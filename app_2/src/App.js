@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FoodItem from './FoodItem';
 
@@ -12,7 +11,7 @@ class App extends Component {
   }
   render() {
 
-    const favFoods = this.state.favoriteFoods.map( item, i => {
+    const favFoods = this.state.favoriteFoods.map( (item, i) => {
         return <FoodItem foodItem={item}/>
     })
 
